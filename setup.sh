@@ -6,7 +6,6 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/20.04/prod
 sudo apt update
 sudo apt-get install msopenjdk-11
-sudo apt-get install msopenjdk-8
 iptables -A INPUT -s 127.0.0.1 -j ACCEPT
 iptables -A INPUT -s yourip -j ACCEPT
 iptables -A INPUT -p tcp --dport 25565 -j ACCEPT
