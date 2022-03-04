@@ -16,6 +16,8 @@ iptables -A INPUT -p tcp -j DROP
 iptables-save
 sudo apt-get install redis-server
 sudo apt-get install mongodb-server
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get install jenkins
 read -t 15 -N 1 -p "Do you want to setup jenkins? (y/N)? " answer
 echo 
