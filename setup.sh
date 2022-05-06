@@ -18,11 +18,11 @@ iptables -A INPUT -p tcp -j DROP
 iptables-save
 sudo apt-get install redis-server
 sudo apt-get install mongodb-server
-sudo apt-get install jenkins
 read -t 15 -N 1 -p "Do you want to setup jenkins? (y/N)? " answer
 echo 
 if [ "${answer,,}" == "y" ]
 then
+    sudo apt-get install jenkins
     sudo systemctl start jenkins
     echo Open http://ci.mythicalmc.org/ and use this key,
     sudo cat /var/lib/jenkins/secrets/initialAdminPassword
