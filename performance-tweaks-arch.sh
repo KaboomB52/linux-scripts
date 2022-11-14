@@ -1,7 +1,6 @@
 sudo pacman -S git
-cd /opt
+sudo pacman -S go
 sudo git clone https://aur.archlinux.org/yay.git
-sudo su
 cd yay
 makepkg -si
 yay -Syu
