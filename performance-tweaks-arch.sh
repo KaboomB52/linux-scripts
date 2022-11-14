@@ -1,3 +1,4 @@
+sudo pacman -Syu
 sudo pacman -S git
 sudo pacman -S go
 sudo git clone https://aur.archlinux.org/yay.git
