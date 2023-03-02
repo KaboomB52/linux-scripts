@@ -1,9 +1,7 @@
 sudo pacman -Syu
 sudo pacman -S git
 sudo pacman -S go
-sudo git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
+sudo pacman -S yay
 yay -Syu
 yay -S ananicy-cpp irqbalance memavaild nohang preload prelockd uresourced
 sudo systemctl disable systemd-oomd
